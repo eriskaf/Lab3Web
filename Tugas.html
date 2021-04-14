@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lanjutan</title>
+</head>
+<body>
+    <header>
+        <h1>Membuat Form</h1>
+        <form action="proses.php" method="POST" >
+            <fieldset>
+                <legend>Data Pelanggan</legend>
+                <p>
+                    <label for="nama">Nama</label>
+                    <input type="text" id="nama" name="nama">
+                </p>
+                <p>
+                    <label for="alamat">Alamat</label>
+                    <textarea name="alamat" id="alamat" cols="20" rows="3"></textarea>
+                </p>
+                <p>
+                    <label>Jenis Kelamin</label>
+                    <input type="radio" id="jk_l" name="kelamin" value="L" /><label for="jk_l">Laki-Laki</label>
+                    <input type="radio" id="jk_p" name="kelamin" value="P" /><label for="jk_p">Perempuan</label>
+                </p>
+                <p>
+                    <label for="hobi">Minat & Hobi</label>                    
+                    <select type="text" name="hobi" id="hobi" multiple="multiple" cols="20">
+                        <option value="Olahraga" selected="selected">Olahraga</option>
+                        <option value="Musik">Musik</option>
+                        <option value="Traveling">Traveling</option>
+                        <option value="Bisnis">Bisnis</option>
+                        <option value="Fotografi">Fotografi</option>
+                        <option value="Jahit">Menjahit</option>
+                    </select>
+                </p>
+                <p>
+                    <input type="submit" value="login">
+                </p>
+            </fieldset>
+
+            <style> form p > label { 
+                display: inline-block; 
+                width: 100px; 
+                } 
+                form input[type="text"], form textarea { 
+                    border: 1px solid #197a43; 
+                } 
+                form input[type="submit"] { 
+                    border: 1px solid #197a43; 
+                    background-color: #197a43; 
+                    color: #ffffff; 
+                    font-weight: bold; 
+                    padding: 5px 15px; 
+                } 
+                form select[type="text"] { 
+                    border: 1px solid #197a43;
+                    width: 200px; 
+                }
+            </style>
+
+        </form>
+    </header>
+</body>
+</html>
